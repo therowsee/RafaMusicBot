@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by therowsee@Github, < https://github.com/therowsee >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/therowsee/DitMusik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/therowsee/DitMusik/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -18,7 +18,7 @@ from pyrogram.types import (InlineKeyboardButton,
 
 import config
 from config import MUSIC_BOT_NAME, lyrical
-from YukkiMusic import app
+from DitxynzBot import app
 
 from ..utils.formatters import (convert_bytes, get_readable_time,
                                 seconds_to_min)
