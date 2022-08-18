@@ -34,7 +34,7 @@ async def unmute_admin(Client, message: Message, _, chat_id):
     if not await is_muted(chat_id):
         return await message.reply_text(_["admin_7"])
     await mute_off(chat_id)
-    await Yukki.unmute_stream(chat_id)
+    await DitMusik.unmute_stream(chat_id)
     await message.reply_text(
         _["admin_8"].format(message.from_user.mention)
     )
