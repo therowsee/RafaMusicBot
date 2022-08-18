@@ -12,11 +12,11 @@ import asyncio
 from pyrogram.types import InlineKeyboardMarkup
 
 from strings import get_string
-from DitxynzBot.misc import db
-from DitxynzBot.utils.database import (get_active_chats, get_lang,
+from DitMusik.misc import db
+from DitMusik.utils.database import (get_active_chats, get_lang,
                                        is_music_playing)
-from DitxynzBot.utils.formatters import seconds_to_min
-from DitxynzBot.utils.inline import (stream_markup_timer,
+from DitMusik.utils.formatters import seconds_to_min
+from DitMusik.utils.inline import (stream_markup_timer,
                                      telegram_markup_timer)
 
 checker = {}
