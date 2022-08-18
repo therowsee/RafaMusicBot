@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.core.call import therowsee
-from DitxynzBot.utils.database import is_muted, mute_on
-from DitxynzBot.utils.decorators import AdminRightsCheck
+from DitMusik import app
+from DitMusik.core.call import therowsee
+from DitMusik.utils.database import is_muted, mute_on
+from DitMusik.utils.decorators import AdminRightsCheck
 
 # Commands
 MUTE_COMMAND = get_command("MUTE_COMMAND")
@@ -34,7 +34,7 @@ async def mute_admin(cli, message: Message, _, chat_id):
     if await is_muted(chat_id):
         return await message.reply_text(_["admin_5"])
     await mute_on(chat_id)
-    await therowsee.mute_stream(chat_id)
+    await DitMusik.mute_stream(chat_id)
     await message.reply_text(
         _["admin_6"].format(message.from_user.mention)
     )
