@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by therowsee@Github, < https://github.com/therowsee >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/therowsee/DitMusik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/therowsee/DitMusik/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -18,14 +18,14 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.misc import db
-from YukkiMusic.utils import (Yukkibin, get_channeplayCB,
+from DitxynzBot import app
+from DitxynzBot.misc import db
+from DitxynzBot.utils import (therowseebin, get_channeplayCB,
                               seconds_to_min)
-from YukkiMusic.utils.database import (get_cmode, is_active_chat,
+from DitxynzBot.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from YukkiMusic.utils.decorators.language import language, languageCB
-from YukkiMusic.utils.inline import queue_back_markup, queue_markup
+from DitxynzBot.utils.decorators.language import language, languageCB
+from DitxynzBot.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
@@ -216,7 +216,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             )
         if "🏷" in msg:
             msg = msg.replace("🏷", "")
-        link = await Yukkibin(msg)
+        link = await therowseebin(msg)
         med = InputMediaPhoto(
             media=link, caption=_["queue_3"].format(link)
         )
