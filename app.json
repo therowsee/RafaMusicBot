@@ -1,7 +1,6 @@
 {
     "name": "DitxyzBot",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "repository": "https://github.com/therowsee",
     "logo": "https://telegra.ph/file/5475143864e770e63ca4c.jpg",
     "keywords": [
     "python3",
