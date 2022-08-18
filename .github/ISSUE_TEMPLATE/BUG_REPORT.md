@@ -8,7 +8,7 @@ title: ''
 
 labels: ''
 
-assignees: 'TeamYukki'
+assignees: 'Ditxyz'
 
 ---
 
@@ -52,7 +52,7 @@ assignees: 'TeamYukki'
 
 >  Go over all the following points, and put an `x` in all the boxes that apply.
 
-- [ ] I searched the [current issues](https://github.com/TeamYukki/YukkiMusicBot/issues) and the issue is not known.
+- [ ] I searched the [current issues](https://github.com/therowsee/DitMusik/issues) and the issue is not known.
 
 - [ ] I searched on Google, Steam, YouTube, Reddit and there's no fix.
 
