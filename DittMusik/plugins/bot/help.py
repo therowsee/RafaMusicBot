@@ -15,13 +15,13 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string, helpers
-from DitxynzBot import app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.utils import help_pannel
-from DitxynzBot.utils.database import get_lang, is_commanddelete_on
-from DitxynzBot.utils.decorators.language import (LanguageStart,
+from DitMusik import app
+from DitMusik.misc import SUDOERS
+from DitMusik.utils import help_pannel
+from DitMusik.utils.database import get_lang, is_commanddelete_on
+from DitMusik.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from DitxynzBot.utils.inline.help import (help_back_markup,
+from DitMusik.utils.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command
