@@ -9,18 +9,18 @@ import config
 from config import BANNED_USERS
 from config.config import OWNER_ID
 from strings import get_command, get_string
-from DitxynzBot import Telegram, YouTube, app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.plugins.play.playlist import del_plist_msg
-from DitxynzBot.plugins.sudo.sudoers import sudoers_list
-from DitxynzBot.utils.database import (add_served_chat,
+from DitMusik import Telegram, YouTube, app
+from DitMusik.misc import SUDOERS
+from DitMusik.plugins.play.playlist import del_plist_msg
+from DitMusik.plugins.sudo.sudoers import sudoers_list
+from DitMusik.utils.database import (add_served_chat,
                                        add_served_user,
                                        blacklisted_chats,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from DitxynzBot.utils.decorators.language import LanguageStart
-from DitxynzBot.utils.inline import (help_pannel, private_panel,
+from DitMusik.utils.decorators.language import LanguageStart
+from DitMusik.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
