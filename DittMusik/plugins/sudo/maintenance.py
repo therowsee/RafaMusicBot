@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by therowsee@Github, < https://github.com/therowsee >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/therowsee/DitMusik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/therowsee/DitMusik/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -11,12 +11,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command, get_string
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import (get_lang, is_maintenance,
+from DitxynzBot import app
+from DitxynzBot.misc import SUDOERS
+from DitxynzBot.utils.database import (get_lang, is_maintenance,
                                        maintenance_off,
                                        maintenance_on)
-from YukkiMusic.utils.decorators.language import language
+from DitxynzBot.utils.decorators.language import language
 
 # Commands
 MAINTENANCE_COMMAND = get_command("MAINTENANCE_COMMAND")
