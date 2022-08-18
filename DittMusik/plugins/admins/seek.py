@@ -70,7 +70,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_30"])
     try:
-        await therowsee.seek_stream(
+        await DitMusik.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
