@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.core.call import Yukki
-from DitxynzBot.utils.database import is_music_playing, music_off
-from DitxynzBot.utils.decorators import AdminRightsCheck
+from DitMusik import app
+from DitMusik.core.call import DitMusik
+from DitMusik.utils.database import is_music_playing, music_off
+from DitMusik.utils.decorators import AdminRightsCheck
 
 # Commands
 PAUSE_COMMAND = get_command("PAUSE_COMMAND")
