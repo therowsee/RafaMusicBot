@@ -2,15 +2,15 @@ blank_issues_enabled: true
 
 contact_links:
 
-  - name: Yukki Support
+  - name: Ditxyz Support
 
-    url: https://t.me/YukkiSupport
+    url: https://t.me/DitxyzSupport
 
     about: Direct chat on non-inquiries subjects.
 
   - name: Documentation
 
-    url: https://Yukki.tech/
+    url: https://Ditxyz.tech/
 
     about: Documentation for getting started with bot.
 
