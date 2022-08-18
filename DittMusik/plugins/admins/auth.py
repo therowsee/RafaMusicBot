@@ -12,12 +12,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.utils.database import (delete_authuser, get_authuser,
+from DitMusik import app
+from DitMusik.utils.database import (delete_authuser, get_authuser,
                                        get_authuser_names,
                                        save_authuser)
-from DitxynzBot.utils.decorators import AdminActual, language
-from DitxynzBot.utils.formatters import int_to_alpha
+from DitMusik.utils.decorators import AdminActual, language
+from DitMusik.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")
