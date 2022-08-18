@@ -11,9 +11,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from DitxynzBot import app
-from DitxynzBot.core.call import therowsee, autoend
-from DitxynzBot.utils.database import (get_client, is_active_chat,
+from DitMusik import app
+from DitMusik.core.call import DitMusik, autoend
+from DitMusik.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -22,7 +22,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from YukkiMusic.core.userbot import assistants
+            from DitMusik.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -68,7 +68,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await therowsee.stop_stream(chat_id)
+                    await DitMusik.stop_stream(chat_id)
                 except:
                     continue
                 try:
