@@ -12,9 +12,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.utils.database import set_cmode
-from DitxynzBot.utils.decorators.admins import AdminActual
+from DitMusik import app
+from DitMusik.utils.database import set_cmode
+from DitMusik.utils.decorators.admins import AdminActual
 
 ### Multi-Lang Commands
 CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")
