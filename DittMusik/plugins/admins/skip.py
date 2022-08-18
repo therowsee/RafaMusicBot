@@ -13,15 +13,15 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import YouTube, app
-from DitxynzBot.core.call import therowsee
-from DitxynzBot.misc import db
-from DitxynzBot.utils.database import get_loop
-from DitxynzBot.utils.decorators import AdminRightsCheck
-from DitxynzBot.utils.inline.play import (stream_markup,
+from DitMusik import YouTube, app
+from DitMusik.core.call import therowsee
+from DitMusik.misc import db
+from DitMusik.utils.database import get_loop
+from DitMusik.utils.decorators import AdminRightsCheck
+from DitMusik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from DitxynzBot.utils.stream.autoclear import auto_clean
-from DitxynzBot.utils.thumbnails import gen_thumb
+from DitMusik.utils.stream.autoclear import auto_clean
+from DitMusik.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
@@ -69,7 +69,7 @@ async def skip(cli, message: Message, _, chat_id):
                                             message.from_user.first_name
                                         )
                                     )
-                                    await Yukki.stop_stream(chat_id)
+                                    await DitMusik.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -96,7 +96,7 @@ async def skip(cli, message: Message, _, chat_id):
                     _["admin_10"].format(message.from_user.first_name)
                 )
                 try:
-                    return await Yukki.stop_stream(chat_id)
+                    return await DitMusik.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -104,7 +104,7 @@ async def skip(cli, message: Message, _, chat_id):
                 await message.reply_text(
                     _["admin_10"].format(message.from_user.first_name)
                 )
-                return await Yukki.stop_stream(chat_id)
+                return await DitMusik.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
