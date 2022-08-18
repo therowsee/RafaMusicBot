@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by therowsee@Github, < https://github.com/therowsee >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/therowsee/DitMusik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/therowsee/DitMusik/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -11,9 +11,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database.memorydatabase import (
+from DitxynzBot import app
+from DitxynzBot.misc import SUDOERS
+from DitxynzBot.utils.database.memorydatabase import (
     get_active_chats, get_active_video_chats)
 
 # Commands
