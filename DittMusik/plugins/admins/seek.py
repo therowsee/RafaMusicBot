@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import YouTube, app
-from DitxynzBot.core.call import therowsee
-from DitxynzBot.misc import db
-from DitxynzBot.utils import AdminRightsCheck, seconds_to_min
+from DitMusik import YouTube, app
+from DitMusik.core.call import therowsee
+from DitMusik.misc import db
+from DitMusik.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
