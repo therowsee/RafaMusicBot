@@ -1,19 +1,19 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by therowsee@Github, < https://github.com/therowsee >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/therowsee/DitMusik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/therowsee/DitMusik/blob/master/LICENSE >
 #
 # All rights reserved.
 
 from pyrogram import filters
 
 from config import BANNED_USERS
-from YukkiMusic import YouTube, app
-from YukkiMusic.utils.channelplay import get_channeplayCB
-from YukkiMusic.utils.decorators.language import languageCB
-from YukkiMusic.utils.stream.stream import stream
+from DitxynzBot import YouTube, app
+from DitxynzBot.utils.channelplay import get_channeplayCB
+from DitxynzBot.utils.decorators.language import languageCB
+from DitxynzBot.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
