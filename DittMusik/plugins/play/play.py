@@ -19,21 +19,21 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from DitxynzBot import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from DitMusik import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from DitxynzBot.core.call import therowsee
-from DitxynzBot.utils import seconds_to_min, time_to_seconds
-from DitxynzBot.utils.channelplay import get_channeplayCB
-from DitxynzBot.utils.database import is_video_allowed
-from DitxynzBot.utils.decorators.language import languageCB
-from DitxynzBot.utils.decorators.play import PlayWrapper
-from DitxynzBot.utils.formatters import formats
-from DitxynzBot.utils.inline.play import (livestream_markup,
+from DitMusik.core.call import DitMusik
+from DitMusik.utils import seconds_to_min, time_to_seconds
+from DitMusik.utils.channelplay import get_channeplayCB
+from DitMusik.utils.database import is_video_allowed
+from DitMusik.utils.decorators.language import languageCB
+from DitMusik.utils.decorators.play import PlayWrapper
+from DitMusik.utils.formatters import formats
+from DitMusik.utils.inline.play import (livestream_markup,
                                           playlist_markup,
                                           slider_markup, track_markup)
-from DitxynzBot.utils.inline.playlist import botplaylist_markup
-from DitxynzBot.utils.logger import play_logs
-from DitxynzBot.utils.stream.stream import stream
+from DitMusik.utils.inline.playlist import botplaylist_markup
+from DitMusik.utils.logger import play_logs
+from DitMusik.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
@@ -335,7 +335,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Yukki.stream_call(url)
+                await DitMusik.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "Ada masalah dengan bot.  Tolong laporkan ke pemilik saya dan minta mereka untuk memeriksa grup logger."
@@ -599,7 +599,7 @@ async def anonymous_check(client, CallbackQuery):
 
 
 @app.on_callback_query(
-    filters.regex("YukkiPlaylists") & ~BANNED_USERS
+    filters.regex("DitMusikPlaylists") & ~BANNED_USERS
 )
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
