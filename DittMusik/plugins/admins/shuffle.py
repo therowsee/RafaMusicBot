@@ -14,9 +14,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.misc import db
-from DitxynzBot.utils.decorators import AdminRightsCheck
+from DitMusik import app
+from DitMusik.misc import db
+from DitMusik.utils.decorators import AdminRightsCheck
 
 # Commands
 SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
