@@ -27,9 +27,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from DitxynzBot import LOGGER, YouTube, app
-from DitxynzBot.misc import db
-from DitxynzBot.utils.database import (add_active_chat,
+from DitMusik import LOGGER, YouTube, app
+from DitMusik.misc import db
+from DitMusik.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        get_assistant,
                                        get_audio_bitrate, get_lang,
@@ -39,11 +39,11 @@ from DitxynzBot.utils.database import (add_active_chat,
                                        remove_active_chat,
                                        remove_active_video_chat,
                                        set_loop)
-from DitxynzBot.utils.exceptions import AssistantErr
-from DitxynzBot.utils.inline.play import (stream_markup,
+from DitMusik.utils.exceptions import AssistantErr
+from DitMusik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from DitxynzBot.utils.stream.autoclear import auto_clean
-from DitxynzBot.utils.thumbnails import gen_thumb
+from DitMusik.utils.stream.autoclear import auto_clean
+from DitMusik.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
@@ -623,4 +623,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-therowsee = Call()
+DitMusik = Call()
