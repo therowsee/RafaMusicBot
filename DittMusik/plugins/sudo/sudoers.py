@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by therowsee@Github, < https://github.com/therowsee >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/therowsee/DitMusik > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/therowsee/DitMusik/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import add_sudo, remove_sudo
-from YukkiMusic.utils.decorators.language import language
+from DitxynzBot import app
+from DitxynzBot.misc import SUDOERS
+from DitxynzBot.utils.database import add_sudo, remove_sudo
+from DitxynzBot.utils.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")
@@ -30,7 +30,7 @@ SUDOUSERS_COMMAND = get_command("SUDOUSERS_COMMAND")
 async def useradd(client, message: Message, _):
     if MONGO_DB_URI is None:
         return await message.reply_text(
-            "**Karena masalah privasi bot, Anda tidak dapat mengelola pengguna sudo saat Anda menggunakan Database XYukki.\n\n Harap isi MONGO_DB_URI Anda di vars Anda untuk menggunakan fitur ini**"
+            "**Karena masalah privasi bot, Anda tidak dapat mengelola pengguna sudo saat Anda menggunakan Database ditxyz.\n\n Harap isi MONGO_DB_URI Anda di vars Anda untuk menggunakan fitur ini**"
         )
     if not message.reply_to_message:
         if len(message.command) != 2:
@@ -76,7 +76,7 @@ async def useradd(client, message: Message, _):
 async def userdel(client, message: Message, _):
     if MONGO_DB_URI is None:
         return await message.reply_text(
-            "**Karena masalah privasi bot, Anda tidak dapat mengelola pengguna sudo saat Anda menggunakan Database XYukki.\n\n Harap isi MONGO_DB_URI Anda di vars Anda untuk menggunakan fitur ini**"
+            "**Karena masalah privasi bot, Anda tidak dapat mengelola pengguna sudo saat Anda menggunakan Database ditxyz.\n\n Harap isi MONGO_DB_URI Anda di vars Anda untuk menggunakan fitur ini**"
         )
     if not message.reply_to_message:
         if len(message.command) != 2:
