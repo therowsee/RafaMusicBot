@@ -18,14 +18,14 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.misc import db
-from DitxynzBot.utils import (therowseebin, get_channeplayCB,
+from DitMusik import app
+from DitMusik.misc import db
+from DitMusik.utils import (DitMusikbin, get_channeplayCB,
                               seconds_to_min)
-from DitxynzBot.utils.database import (get_cmode, is_active_chat,
+from DitMusik.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from DitxynzBot.utils.decorators.language import language, languageCB
-from DitxynzBot.utils.inline import queue_back_markup, queue_markup
+from DitMusik.utils.decorators.language import language, languageCB
+from DitMusik.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
