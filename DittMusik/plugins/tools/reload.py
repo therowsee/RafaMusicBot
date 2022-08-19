@@ -13,13 +13,13 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.core.call import therowsee
-from DitxynzBot.misc import db
-from DitxynzBot.utils.database import get_authuser_names, get_cmode
-from DitxynzBot.utils.decorators import (ActualAdminCB, AdminActual,
+from DittMusik import app
+from DittMusik.core.call import therowsee
+from DittMusik.misc import db
+from DittMusik.utils.database import get_authuser_names, get_cmode
+from DittMusik.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
-from DitxynzBot.utils.formatters import alpha_to_int
+from DittMusik.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
