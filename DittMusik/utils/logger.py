@@ -8,8 +8,8 @@
 # All rights reserved.
 
 from config import LOG, LOG_GROUP_ID
-from DitxynzBot import app
-from DitxynzBot.utils.database import is_on_off
+from DitMusik import app
+from DitMusik.utils.database import is_on_off
 
 
 async def play_logs(message, streamtype):
