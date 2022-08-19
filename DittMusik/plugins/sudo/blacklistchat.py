@@ -12,12 +12,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.utils.database import (blacklist_chat,
+from DitMusik import app
+from DitMusik.misc import SUDOERS
+from DitMusik.utils.database import (blacklist_chat,
                                        blacklisted_chats,
                                        whitelist_chat)
-from DitxynzBot.utils.decorators.language import language
+from DitMusik.utils.decorators.language import language
 
 # Commands
 
