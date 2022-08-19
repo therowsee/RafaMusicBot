@@ -1,6 +1,6 @@
-# DitxyzBot Multi-Language Support
+# DitMusik Multi-Language Support
 
-- These all are the languages currently available in DitxyzBot. You can edit or change all strings available.
+- These all are the languages currently available in DitMusik. You can edit or change all strings available.
 
 | Code | Language | Contributor |
 |-|-------|-------|
@@ -9,7 +9,7 @@
 | hi | Hindi  | Thanks to [TeamYukki](https://t.me/TeamYukki)
 
 
-### We need your help in translating DitxyzBot. How to Contribute?
+### We need your help in translating DitMusik. How to Contribute?
 
 You can edit [`en.yml`](https://github.com/therowsee/public/blob/master/strings/langs/en.yml) present in langs folder to your own language and send us the edited file at [@DitxyzSupport](https://t.me/DitxyzSupport)
 
