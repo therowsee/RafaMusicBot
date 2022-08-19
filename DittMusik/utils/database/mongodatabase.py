@@ -9,7 +9,7 @@
 
 from typing import Dict, List, Union
 
-from DitxynzBot.core.mongo import mongodb
+from DitMusik.core.mongo import mongodb
 
 queriesdb = mongodb.queries
 userdb = mongodb.userstats
