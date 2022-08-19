@@ -14,20 +14,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from DitxynzBot import Carbon, YouTube, app
-from DitxynzBot.core.call import therowsee 
-from DitxynzBot.misc import db
-from DitxynzBot.utils.database import (add_active_chat,
+from DitMusik import Carbon, YouTube, app
+from DitMusik.core.call import DitMusik 
+from DitMusik.misc import db
+from DitMusik.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        is_active_chat,
                                        is_video_allowed, music_on)
-from DitxynzBot.utils.exceptions import AssistantErr
-from DitxynzBot.utils.inline.play import (stream_markup,
+from DitMusik.utils.exceptions import AssistantErr
+from DitMusik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from DitxynzBot.utils.inline.playlist import close_markup
-from DitxynzBot.utils.pastebin import therowseebin
-from DitxynzBot.utils.stream.queue import put_queue, put_queue_index
-from DitxynzBot.utils.thumbnails import gen_thumb
+from DitMusik.utils.inline.playlist import close_markup
+from DitMusik.utils.pastebin import DitMusikbin
+from DitMusik.utils.stream.queue import put_queue, put_queue_index
+from DitMusik.utils.thumbnails import gen_thumb
 
 
 async def stream(
@@ -49,7 +49,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await Yukki.force_stop_stream(chat_id)
+        await DitMusik.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -98,7 +98,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await Yukki.join_call(
+                await DitMusik.join_call(
                     chat_id, original_chat_id, file_path, video=status
                 )
                 await put_queue(
@@ -129,7 +129,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await therowseebin(msg)
+            link = await DitMusikbin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -233,7 +233,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Ditt.join_call(
+            await DitMusik.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
             await put_queue(
@@ -287,7 +287,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Ditt.join_call(
+            await DitMusik.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -348,7 +348,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Ditt.join_call(
+            await DitMusik.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
