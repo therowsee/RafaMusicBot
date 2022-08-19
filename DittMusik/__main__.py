@@ -16,10 +16,10 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from DitxynzBot import LOGGER, app, userbot
-from DitxynzBot.core.call import therowsee
-from DitxynzBot.plugins import ALL_MODULES
-from DitxynzBot.utils.database import get_banned_users, get_gbanned
+from DitMusik import LOGGER, app, userbot
+from DitMusik.core.call import DitMusik
+from DitMusik.plugins import ALL_MODULES
+from DitMusik.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
@@ -32,7 +32,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("DitxynzBot").error(
+        LOGGER("DitMusik").error(
             "Tidak Ada Asisten Klien yang Ditentukan Vars!.. Proses Keluar."
         )
         return
@@ -40,7 +40,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("DitxynzBot").warning(
+        LOGGER("DitMusik").warning(
             "Tidak ada Spotify Vars yang ditentukan.  Bot Anda tidak akan dapat memainkan kueri spotify."
         )
     try:
@@ -54,28 +54,28 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("YukkiMusic.plugins" + all_module)
-    LOGGER("DitxynzBot.plugins").info(
+        importlib.import_module("DitMusik.plugins" + all_module)
+    LOGGER("DitMusik.plugins").info(
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Ditt.start()
+    await DitMusik.start()
     try:
         await Ditt.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("DitxynzBot").error(
+        LOGGER("DitMusik").error(
             "[ERROR] - \n\nHarap aktifkan Obrolan Suara Grup Logger Anda.  Pastikan Anda tidak pernah menutup/mengakhiri obrolan suara di grup log Anda"
         )
         sys.exit()
     except:
         pass
     await Ditt.decorators()
-    LOGGER("DitxynzBot").info("Ditt Music Bot Started Successfully")
+    LOGGER("DitMusik").info("DitMusik Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("DitxynzBot").info("Stopping Ditt ! GoodBye")
+    LOGGER("DitMusik").info("Stopping Ditt ! GoodBye")
