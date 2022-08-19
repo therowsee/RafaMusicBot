@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs18
+FROM nrzadty/python-nodejs:python4.0-nodejs19
 RUN apt-get update -y && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends ffmpeg \
     && apt-get clean \
