@@ -13,14 +13,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from DitxynzBot import app
-from DitxynzBot.utils.database import (get_global_tops,
+from DitMusik import app
+from DitMusik.utils.database import (get_global_tops,
                                        get_particulars, get_userss)
-from DitxynzBot.utils.decorators.language import languageCB
-from DitxynzBot.utils.inline.playlist import (botplaylist_markup,
+from DitMusik.utils.decorators.language import languageCB
+from DitMusik.utils.inline.playlist import (botplaylist_markup,
                                               failed_top_markup,
                                               top_play_markup)
-from DitxynzBot.utils.stream.stream import stream
+from DitMusik.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 
