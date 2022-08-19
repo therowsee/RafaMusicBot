@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.utils.database import add_sudo, remove_sudo
-from DitxynzBot.utils.decorators.language import language
+from DitMusik import app
+from DitMusik.misc import SUDOERS
+from DitMusik.utils.database import add_sudo, remove_sudo
+from DitMusik.utils.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")
@@ -30,7 +30,7 @@ SUDOUSERS_COMMAND = get_command("SUDOUSERS_COMMAND")
 async def useradd(client, message: Message, _):
     if MONGO_DB_URI is None:
         return await message.reply_text(
-            "**Karena masalah privasi bot, Anda tidak dapat mengelola pengguna sudo saat Anda menggunakan Database ditxyz.\n\n Harap isi MONGO_DB_URI Anda di vars Anda untuk menggunakan fitur ini**"
+            "**Karena masalah privasi bot, Anda tidak dapat mengelola pengguna sudo saat Anda menggunakan Database DitMusik.\n\n Harap isi MONGO_DB_URI Anda di vars Anda untuk menggunakan fitur ini**"
         )
     if not message.reply_to_message:
         if len(message.command) != 2:
@@ -76,7 +76,7 @@ async def useradd(client, message: Message, _):
 async def userdel(client, message: Message, _):
     if MONGO_DB_URI is None:
         return await message.reply_text(
-            "**Karena masalah privasi bot, Anda tidak dapat mengelola pengguna sudo saat Anda menggunakan Database ditxyz.\n\n Harap isi MONGO_DB_URI Anda di vars Anda untuk menggunakan fitur ini**"
+            "**Karena masalah privasi bot, Anda tidak dapat mengelola pengguna sudo saat Anda menggunakan Database DitMusik.\n\n Harap isi MONGO_DB_URI Anda di vars Anda untuk menggunakan fitur ini**"
         )
     if not message.reply_to_message:
         if len(message.command) != 2:
