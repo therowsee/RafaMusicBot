@@ -103,7 +103,7 @@ packages
 node
 repo
 installation
-pprint "\n\n\n\n\nDitxyzBot Installation Completed!" "cgreen"
+pprint "\n\n\n\n\nDitMusik Installation Completed!" "cgreen"
 sleep 4
 clear
 
