@@ -1,17 +1,17 @@
-# DitxyzBot Configs
+# DitMusik Configs
 
 Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
 
-### Get to know about all these vars in depth from our Docs. [Read Now from Here](https://notreallyshikhar.gitbook.io/yukkimusicbot/config-vars/available-vars)
+### Get to know about all these vars in depth from our Docs. [Read Now from Here](https://therowsee.gitbook.io/DitMusik/config-vars/available-vars)
 
 ## Mandatory Vars
 
-- These are the minimum required vars need to setup to make DitxyzBot functional.
+- These are the minimum required vars need to setup to make DitMusik functional.
 
 1. `API_ID` : Get it from my.telegram.org 
 2. `API_HASH`  : Get it from my.telegram.org 
 3. `BOT_TOKEN` : Get it from [@Botfather](http://t.me/BotFather) in Telegram
-4. `MONGO_DB_URI` : Get mongo db [from here.](https://www.mongodb.com/cloud)
+4. `MONGO_DB_URI` : Get mongo db [from here.](https://cloud.mongodb.com)
 5. `LOG_GROUP_ID` : You'll need a Private Group ID for this. Supergroup Needed with id starting from -100 
 6. `MUSIC_BOT_NAME` : A name for your Music bot.
 7. `OWNER_ID` : Your Owner ID for managing your bot.
@@ -55,7 +55,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Spotify Vars
 
-- You can play tracks or playlists from spotify from DitxyzBot
+- You can play tracks or playlists from spotify from DitMusik
 - You'll need these two vars to make spotify play working. This is not essential , you can leave them blank if you want.
 
 ### How to get these? [Read from here](https://notreallyshikhar.gitbook.io/DitMusik/deployment/spotify)
@@ -70,7 +70,7 @@ Config vars are basically the variables which configure or modify bot to functio
 - To work some Heroku compatible modules, this var value required to Access your account to use `get_log`, `usage`, `update` etc etc commands.
 - You can fill this var using your API key or Authorization token.
 
-### How to get these? [Read from here](https://notreallyshikhar.gitbook.io/DitMusik/config-vars/heroku-vars)
+### How to get these? [Read from here](https://therowsee.gitbook.io/DitMusik/config-vars/heroku-vars)
 
 1. `HEROKU_API_KEY` : Get it from http://dashboard.heroku.com/account 
 2. `HEROKU_APP_NAME` : You have to Enter the app name which you gave to identify your Music Bot in Heroku. 
@@ -78,7 +78,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Custom Repo Vars
 
-- If you plan to use Yukki Music Bot with your own customized or modified code.
+- If you plan to use DitMusik Bot with your own customized or modified code.
 
 1. `UPSTREAM_REPO` : Your Upstream Repo URL or Forked Repo.
 2. `UPSTREAM_BRANCH` : Default Branch of your Upstream Repo URL or Forked Repo. 
@@ -89,7 +89,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Images/Thumbnail Vars
 
-- You can change images which are used in DitxyzBot.
+- You can change images which are used in DitMusik.
 - You can generate telegaph links from [@YukkiTelegraphBot](http://t.me/YukkiTelegraphBot) and use it here.
 
 1. `START_IMG_URL` : Image which comes on /start command in private messages of bot.
