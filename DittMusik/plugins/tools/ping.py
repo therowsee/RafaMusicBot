@@ -14,10 +14,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.core.call import therowsee
-from DitxynzBot.utils import bot_sys_stats
-from DitxynzBot.utils.decorators.language import language
+from DitMusik import app
+from DitMusik.core.call import DitMusik
+from DitMusik.utils import bot_sys_stats
+from DitMusik.utils.decorators.language import language
 
 ### Commands
 PING_COMMAND = get_command("PING_COMMAND")
