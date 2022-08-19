@@ -7,8 +7,8 @@
 #
 # All rights reserved.
 
-from DitxynzBot import app
-from DitxynzBot.utils.database import get_cmode
+from DitMusik import app
+from DitMusik.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
