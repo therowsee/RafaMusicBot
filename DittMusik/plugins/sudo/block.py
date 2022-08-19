@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.utils.database import add_gban_user, remove_gban_user
-from DitxynzBot.utils.decorators.language import language
+from DitMusik import app
+from DitMusik.misc import SUDOERS
+from DitMusik.utils.database import add_gban_user, remove_gban_user
+from DitMusik.utils.decorators.language import language
 
 # Command
 BLOCK_COMMAND = get_command("BLOCK_COMMAND")
