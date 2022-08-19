@@ -11,9 +11,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.utils.database.memorydatabase import (
+from DitMusik import app
+from DitMusik.misc import SUDOERS
+from DitMusik.utils.database.memorydatabase import (
     get_active_chats, get_active_video_chats)
 
 # Commands
