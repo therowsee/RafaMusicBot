@@ -7,11 +7,11 @@
 #
 # All rights reserved.
 
-from DitxynzBot import DitxyzBot
-from DitxynzBot.core.dir import dirr
-from DitxynzBot.core.git import git
-from DitxynzBot.core.userbot import Userbot
-from DitxynzBot.misc import dbb, heroku, sudo
+from DitMusik import DitMusik
+from DitMusik.core.dir import dirr
+from DitMusik.core.git import git
+from DitMusik.core.userbot import Userbot
+from DitMusik.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
 
@@ -31,7 +31,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = DitxyzBot()
+app = DitMusik()
 
 # Assistant Client
 userbot = Userbot()
