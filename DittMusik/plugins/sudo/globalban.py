@@ -15,16 +15,16 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.utils import get_readable_time
-from DitxynzBot.utils.database import (add_banned_user,
+from DitMusik import app
+from DitMusik.misc import SUDOERS
+from DitMusik.utils import get_readable_time
+from DitMusik.utils.database import (add_banned_user,
                                        get_banned_count,
                                        get_banned_users,
                                        get_served_chats,
                                        is_banned_user,
                                        remove_banned_user)
-from DitxynzBot.utils.decorators.language import language
+from DitMusik.utils.decorators.language import language
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")
