@@ -11,10 +11,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.utils.database import add_off, add_on
-from DitxynzBot.utils.decorators.language import language
+from DitMusik import app
+from DitMusik.misc import SUDOERS
+from DitMusik.utils.database import add_off, add_on
+from DitMusik.utils.decorators.language import language
 
 # Commands
 LOGGER_COMMAND = get_command("LOGGER_COMMAND")
