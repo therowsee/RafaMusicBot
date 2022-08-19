@@ -13,9 +13,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string
-from DitxynzBot import app
-from DitxynzBot.utils.database import get_lang, set_lang
-from DitxynzBot.utils.decorators import (ActualAdminCB, language,
+from DitMusik import app
+from DitMusik.utils.database import get_lang, set_lang
+from DitMusik.utils.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available
