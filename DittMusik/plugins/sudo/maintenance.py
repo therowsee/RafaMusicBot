@@ -11,12 +11,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command, get_string
-from DitxynzBot import app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.utils.database import (get_lang, is_maintenance,
+from DitMusik import app
+from DitMusik.misc import SUDOERS
+from DitMusik.utils.database import (get_lang, is_maintenance,
                                        maintenance_off,
                                        maintenance_on)
-from DitxynzBot.utils.decorators.language import language
+from DitMusik.utils.decorators.language import language
 
 # Commands
 MAINTENANCE_COMMAND = get_command("MAINTENANCE_COMMAND")
