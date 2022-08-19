@@ -1,4 +1,4 @@
-## Ditt Assets Folder
+## DitMusik Assets Folder
 
 # Contains all the fonts and thumb related files.
 
