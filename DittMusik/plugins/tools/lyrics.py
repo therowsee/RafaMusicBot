@@ -18,8 +18,8 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.utils.decorators.language import language
+from DitMusik import app
+from DitMusik.utils.decorators.language import language
 
 ###Commands
 LYRICS_COMMAND = get_command("LYRICS_COMMAND")
