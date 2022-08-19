@@ -13,10 +13,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from DitxynzBot import app
-from DitxynzBot.misc import SUDOERS
-from DitxynzBot.utils.database.memorydatabase import get_video_limit
-from DitxynzBot.utils.formatters import convert_bytes
+from DitMusik import app
+from DitMusik.misc import SUDOERS
+from DitMusik.utils.database.memorydatabase import get_video_limit
+from DitMusik.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
