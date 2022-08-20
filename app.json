@@ -6,20 +6,20 @@
     "python3",
     "telegram",
     "bot",
-    "DitxyzBot",
-    "DitxynzBot",
+    "DitMusik",
+    "DitMusik",
     "telegram-bot",
     "pyrogram"
     ],
     "stack": "container",
     "env": {
-      "API_ID": {
-        "description": "Dapatkan nilai ini dari https://my.telegram.",
+      "API_KEY": {
+        "description": "Dapatkan API_KEY ini dari https://my.telegram.",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "Dapatkan nilai ini dari https://my.telegram.org.",
+        "description": "Dapatkan API_HASH ini dari https://my.telegram.org.",
         "value": "",
         "required": true
       },
