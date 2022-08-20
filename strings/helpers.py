@@ -64,7 +64,7 @@ HELP_3 = """✅<u>**Bot Commands:**</u>
 
 /stats - Dapatkan 10 Trek Global Stats Teratas, 10 Pengguna Bot Teratas, 10 Obrolan Teratas di bot, 10 Teratas Dimainkan dalam obrolan, dll.
 
-/sudolist - Periksa Pengguna Sudo dari Bot Musik Yukki
+/sudolist - Periksa Pengguna Sudo dari Bot DitMusik
 
 /lyrics [Music Name] - Mencari Lirik untuk Musik tertentu di web.
 
