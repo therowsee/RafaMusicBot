@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID
 from strings import get_command
-from DitMusik import app
-from DitMusik.misc import SUDOERS
-from DitMusik.utils.database import add_sudo, remove_sudo
-from DitMusik.utils.decorators.language import language
+from therowsee import app
+from therowsee.misc import SUDOERS
+from therowsee.utils.database import add_sudo, remove_sudo
+from therowsee.utils.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")
