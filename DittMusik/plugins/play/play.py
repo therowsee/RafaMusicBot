@@ -19,21 +19,21 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from DitMusik import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from therowsee import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from DitMusik.core.call import DitMusik
-from DitMusik.utils import seconds_to_min, time_to_seconds
-from DitMusik.utils.channelplay import get_channeplayCB
-from DitMusik.utils.database import is_video_allowed
-from DitMusik.utils.decorators.language import languageCB
-from DitMusik.utils.decorators.play import PlayWrapper
-from DitMusik.utils.formatters import formats
-from DitMusik.utils.inline.play import (livestream_markup,
+from therowsee.core.call import DitMusik
+from therowsee.utils import seconds_to_min, time_to_seconds
+from therowsee.utils.channelplay import get_channeplayCB
+from therowsee.utils.database import is_video_allowed
+from therowsee.utils.decorators.language import languageCB
+from therowsee.utils.decorators.play import PlayWrapper
+from therowsee.utils.formatters import formats
+from therowsee.utils.inline.play import (livestream_markup,
                                           playlist_markup,
                                           slider_markup, track_markup)
-from DitMusik.utils.inline.playlist import botplaylist_markup
-from DitMusik.utils.logger import play_logs
-from DitMusik.utils.stream.stream import stream
+from therowsee.utils.inline.playlist import botplaylist_markup
+from therowsee.utils.logger import play_logs
+from therowsee.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
