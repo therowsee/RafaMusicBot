@@ -11,10 +11,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from DitMusik import app
-from DitMusik.misc import SUDOERS
-from DitMusik.utils.database import set_video_limit
-from DitMusik.utils.decorators.language import language
+from therowsee import app
+from therowsee.misc import SUDOERS
+from therowsee.utils.database import set_video_limit
+from therowsee.utils.decorators.language import language
 
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 
