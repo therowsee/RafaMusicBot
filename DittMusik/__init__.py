@@ -7,11 +7,11 @@
 #
 # All rights reserved.
 
-from DitMusik import DitMusik
-from DitMusik.core.dir import dirr
-from DitMusik.core.git import git
-from DitMusik.core.userbot import Userbot
-from DitMusik.misc import dbb, heroku, sudo
+from therowsee import DitMusik
+from therowsee.core.dir import dirr
+from therowsee.core.git import git
+from therowsee.core.userbot import Userbot
+from therowsee.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
 
