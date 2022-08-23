@@ -10,10 +10,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from DitMusik import YouTube, app
-from DitMusik.utils.channelplay import get_channeplayCB
-from DitMusik.utils.decorators.language import languageCB
-from DitMusik.utils.stream.stream import stream
+from therowsee import YouTube, app
+from therowsee.utils.channelplay import get_channeplayCB
+from therowsee.utils.decorators.language import languageCB
+from therowsee.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
