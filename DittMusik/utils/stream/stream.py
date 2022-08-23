@@ -14,20 +14,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from DitMusik import Carbon, YouTube, app
-from DitMusik.core.call import DitMusik 
-from DitMusik.misc import db
-from DitMusik.utils.database import (add_active_chat,
+from therowsee import Carbon, YouTube, app
+from therowsee.core.call import DitMusik 
+from therowsee.misc import db
+from therowsee.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        is_active_chat,
                                        is_video_allowed, music_on)
-from DitMusik.utils.exceptions import AssistantErr
-from DitMusik.utils.inline.play import (stream_markup,
+from therowsee.utils.exceptions import AssistantErr
+from therowsee.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from DitMusik.utils.inline.playlist import close_markup
-from DitMusik.utils.pastebin import DitMusikbin
-from DitMusik.utils.stream.queue import put_queue, put_queue_index
-from DitMusik.utils.thumbnails import gen_thumb
+from therowsee.utils.inline.playlist import close_markup
+from therowsee.utils.pastebin import DitMusikbin
+from therowsee.utils.stream.queue import put_queue, put_queue_index
+from therowsee.utils.thumbnails import gen_thumb
 
 
 async def stream(
