@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitMusik import app
-from DitMusik.utils.database.memorydatabase import (get_loop,
+from therowsee import app
+from therowsee.utils.database.memorydatabase import (get_loop,
                                                       set_loop)
-from DitMusik.utils.decorators import AdminRightsCheck
+from therowsee.utils.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")
