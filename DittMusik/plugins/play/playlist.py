@@ -17,16 +17,16 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from strings import get_command
-from DitMusik import Carbon, YouTube, app
-from DitMusik.utils.database import (delete_playlist, get_playlist,
+from therowsee import Carbon, YouTube, app
+from therowsee.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
-from DitMusik.utils.decorators.language import language, languageCB
-from DitMusik.utils.inline.playlist import (botplaylist_markup,
+from therowsee.utils.decorators.language import language, languageCB
+from therowsee.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from DitMusik.utils.pastebin import DitMusikbin
-from DitMusik.utils.stream.stream import stream
+from therowsee.utils.pastebin import DitMusikbin
+from therowsee.utils.stream.stream import stream
 
 # Command
 PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
