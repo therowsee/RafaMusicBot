@@ -10,7 +10,7 @@
 
 import config
 from config import PRIVATE_BOT_MODE
-from DitMusik.core.mongo import mongodb
+from therowsee.core.mongo import mongodb
 
 channeldb = mongodb.cplaymode
 commanddb = mongodb.commands
