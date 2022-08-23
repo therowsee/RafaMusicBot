@@ -13,15 +13,15 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from DitMusik import YouTube, app
-from DitMusik.core.call import therowsee
-from DitMusik.misc import db
-from DitMusik.utils.database import get_loop
-from DitMusik.utils.decorators import AdminRightsCheck
-from DitMusik.utils.inline.play import (stream_markup,
+from therowsee import YouTube, app
+from therowsee.core.call import DitMusik 
+from therowsee.misc import db
+from therowsee.utils.database import get_loop
+from therowsee.utils.decorators import AdminRightsCheck
+from therowsee.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from DitMusik.utils.stream.autoclear import auto_clean
-from DitMusik.utils.thumbnails import gen_thumb
+from therowsee.utils.stream.autoclear import auto_clean
+from therowsee.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
