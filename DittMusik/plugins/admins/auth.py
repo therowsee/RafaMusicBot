@@ -12,12 +12,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
-from DitMusik import app
-from DitMusik.utils.database import (delete_authuser, get_authuser,
+from therowsee import app
+from therowsee.utils.database import (delete_authuser, get_authuser,
                                        get_authuser_names,
                                        save_authuser)
-from DitMusik.utils.decorators import AdminActual, language
-from DitMusik.utils.formatters import int_to_alpha
+from therowsee.utils.decorators import AdminActual, language
+from therowsee.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")
