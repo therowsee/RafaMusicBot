@@ -9,8 +9,8 @@
 
 
 from strings import get_string
-from DitMusik.misc import SUDOERS
-from DitMusik.utils.database import (get_lang, is_commanddelete_on,
+from therowsee.misc import SUDOERS
+from therowsee.utils.database import (get_lang, is_commanddelete_on,
                                        is_maintenance)
 
 
