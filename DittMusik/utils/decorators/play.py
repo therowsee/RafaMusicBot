@@ -11,15 +11,15 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, adminlist
 from strings import get_string
-from DitMusik import YouTube, app
-from DitMusik.misc import SUDOERS
-from DitMusik.utils.database import (get_cmode, get_lang,
+from therowsee import YouTube, app
+from therowsee.misc import SUDOERS
+from therowsee.utils.database import (get_cmode, get_lang,
                                        get_playmode, get_playtype,
                                        is_active_chat,
                                        is_commanddelete_on,
                                        is_served_private_chat)
-from DitMusik.utils.database.memorydatabase import is_maintenance
-from DitMusik.utils.inline.playlist import botplaylist_markup
+from therowsee.utils.database.memorydatabase import is_maintenance
+from therowsee.utils.inline.playlist import botplaylist_markup
 
 
 def PlayWrapper(command):
