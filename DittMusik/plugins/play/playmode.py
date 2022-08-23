@@ -12,11 +12,11 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitMusik import app
-from DitMusik.utils.database import (get_playmode, get_playtype,
+from therowsee import app
+from therowsee.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from DitMusik.utils.decorators import language
-from DitMusik.utils.inline.settings import playmode_users_markup
+from therowsee.utils.decorators import language
+from therowsee.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
