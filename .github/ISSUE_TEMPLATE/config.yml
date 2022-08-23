@@ -2,15 +2,15 @@ blank_issues_enabled: true
 
 contact_links:
 
-  - name: Ditxyz Support
+  - name: Rapalel
 
-    url: https://t.me/DitxyzSupport
+    url: t.me/PalelSupportGRUP
 
     about: Direct chat on non-inquiries subjects.
 
   - name: Documentation
 
-    url: https://yukki.tech/
+    url: t.me/PalelSupportCH
 
     about: Documentation for getting started with bot.
 
