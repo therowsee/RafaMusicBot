@@ -11,9 +11,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import adminlist
 from strings import get_string
-from DitMusik import app
-from DitMusik.misc import SUDOERS
-from DitMusik.utils.database import (get_authuser_names, get_cmode,
+from therowsee import app
+from therowsee.misc import SUDOERS
+from therowsee.utils.database import (get_authuser_names, get_cmode,
                                        get_lang, is_active_chat,
                                        is_commanddelete_on,
                                        is_maintenance,
