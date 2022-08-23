@@ -12,13 +12,13 @@ from pyrogram.types import Message
 
 import config
 from strings import get_command
-from DitMusik import app
-from DitMusik.misc import SUDOERS
-from DitMusik.utils.database import (add_private_chat,
+from therowsee import app
+from therowsee.misc import SUDOERS
+from therowsee.utils.database import (add_private_chat,
                                        get_private_served_chats,
                                        is_served_private_chat,
                                        remove_private_chat)
-from DitMusik.utils.decorators.language import language
+from therowsee.utils.decorators.language import language
 
 AUTHORIZE_COMMAND = get_command("AUTHORIZE_COMMAND")
 UNAUTHORIZE_COMMAND = get_command("UNAUTHORIZE_COMMAND")
