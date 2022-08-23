@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DitMusik import app
-from DitMusik.core.call import therowsee
-from DitMusik.utils.database import is_muted, mute_on
-from DitMusik.utils.decorators import AdminRightsCheck
+from therowsee import app
+from therowsee.core.call import therowsee
+from therowsee.utils.database import is_muted, mute_on
+from therowsee.utils.decorators import AdminRightsCheck
 
 # Commands
 MUTE_COMMAND = get_command("MUTE_COMMAND")
