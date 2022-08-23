@@ -18,8 +18,8 @@ from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from DitMusik.utils.database import is_on_off
-from DitMusik.utils.formatters import time_to_seconds
+from therowsee.utils.database import is_on_off
+from therowsee.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
