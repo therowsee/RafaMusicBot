@@ -21,17 +21,17 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from DitxynzBot import YouTube, app
-from DitxynzBot.core.userbot import assistants
-from DitxynzBot.misc import SUDOERS, pymongodb
-from DitxynzBot.plugins import ALL_MODULES
-from DitxynzBot.utils.database import (get_global_tops,
+from therowsee import YouTube, app
+from therowsee.core.userbot import assistants
+from therowsee.misc import SUDOERS, pymongodb
+from therowsee.plugins import ALL_MODULES
+from therowsee.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from DitxynzBot.utils.decorators.language import language, languageCB
-from DitxynzBot.utils.inline.stats import (back_stats_buttons,
+from therowsee.utils.decorators.language import language, languageCB
+from therowsee.utils.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,
