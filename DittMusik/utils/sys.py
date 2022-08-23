@@ -11,7 +11,7 @@ import time
 
 import psutil
 
-from DitMusik.misc import _boot_
+from therowsee.misc import _boot_
 
 from .formatters import get_readable_time
 
