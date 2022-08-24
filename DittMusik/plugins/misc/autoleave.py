@@ -12,7 +12,7 @@ from datetime import datetime
 
 import config
 from DittMusik import app
-from DittMusik.core.call import DitMusik, autoend
+from DittMusik.core.call import Ditt, autoend
 from DittMusik.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
@@ -68,7 +68,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await DittMusik.stop_stream(chat_id)
+                    await Ditt.stop_stream(chat_id)
                 except:
                     continue
                 try:
