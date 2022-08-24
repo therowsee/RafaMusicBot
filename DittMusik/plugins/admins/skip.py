@@ -14,7 +14,7 @@ import config
 from config import BANNED_USERS
 from strings import get_command
 from DittMusik import YouTube, app
-from DittMusik.core.call import DitMusik 
+from DittMusik.core.call import Ditt
 from DittMusik.misc import db
 from DittMusik.utils.database import get_loop
 from DittMusik.utils.decorators import AdminRightsCheck
