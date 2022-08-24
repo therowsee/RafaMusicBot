@@ -14,7 +14,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from therowsee.core.mongo import pymongodb
+from DittMusik.core.mongo import pymongodb
 
 from .logging import LOGGER
 
