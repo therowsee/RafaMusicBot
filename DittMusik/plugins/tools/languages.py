@@ -13,9 +13,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string
-from therowsee import app
-from therowsee.utils.database import get_lang, set_lang
-from therowsee.utils.decorators import (ActualAdminCB, language,
+from DittMusik import app
+from DittMusik.utils.database import get_lang, set_lang
+from DittMusik.utils.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available
