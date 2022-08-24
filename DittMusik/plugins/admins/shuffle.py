@@ -14,9 +14,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from therowsee import app
-from therowsee.misc import db
-from therowsee.utils.decorators import AdminRightsCheck
+from DittMusik import app
+from DittMusik.misc import db
+from DittMusik.utils.decorators import AdminRightsCheck
 
 # Commands
 SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
