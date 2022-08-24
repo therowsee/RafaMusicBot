@@ -13,10 +13,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from therowsee import app
-from therowsee.misc import SUDOERS
-from therowsee.utils.database.memorydatabase import get_video_limit
-from therowsee.utils.formatters import convert_bytes
+from DittMusik import app
+from DittMusik.misc import SUDOERS
+from DittMusik.utils.database.memorydatabase import get_video_limit
+from DittMusik.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
