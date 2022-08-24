@@ -13,9 +13,9 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from therowsee import app
-from therowsee.core.call import DitMusik
-from therowsee.utils.database import is_music_playing, music_off
-from therowsee.utils.decorators import AdminRightsCheck
+from DittMusik.core.call import DitMusik
+from DittMusik.utils.database import is_music_playing, music_off
+from DittMusik.utils.decorators import AdminRightsCheck
 
 # Commands
 PAUSE_COMMAND = get_command("PAUSE_COMMAND")
