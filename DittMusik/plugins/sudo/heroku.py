@@ -24,13 +24,13 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from therowsee import app
-from therowsee.misc import HAPP, SUDOERS, XCB
-from therowsee.utils.database import (get_active_chats,
+from DittMusik import app
+from DittMusik.misc import HAPP, SUDOERS, XCB
+from DittMusik.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
-from therowsee.utils.decorators.language import language
-from therowsee.utils.pastebin import DitMusikbin
+from DittMusik.utils.decorators.language import language
+from DittMusik.utils.pastebin import DitMusikbin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
