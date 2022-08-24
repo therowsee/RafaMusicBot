@@ -13,7 +13,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from DittMusik import app
-from DittMusik.core.call import DitMusik 
+from DittMusik.core.call import Ditt
 from DittMusik.utils.database import is_muted, mute_off
 from DittMusik.utils.decorators import AdminRightsCheck
 
@@ -34,7 +34,7 @@ async def unmute_admin(Client, message: Message, _, chat_id):
     if not await is_muted(chat_id):
         return await message.reply_text(_["admin_7"])
     await mute_off(chat_id)
-    await DitMusik.unmute_stream(chat_id)
+    await Ditt.unmute_stream(chat_id)
     await message.reply_text(
         _["admin_8"].format(message.from_user.mention)
     )
