@@ -13,8 +13,8 @@ from pyrogram.types import (InlineKeyboardButton,
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import BANNED_USERS, MUSIC_BOT_NAME
-from therowsee import app
-from therowsee.utils.inlinequery import answer
+from DittMusik import app
+from DittMusik.utils.inlinequery import answer
 
 
 @app.on_inline_query(~BANNED_USERS)
