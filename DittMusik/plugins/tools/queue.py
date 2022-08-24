@@ -18,14 +18,14 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from therowsee import app
-from therowsee.misc import db
-from therowsee.utils import (DitMusikbin, get_channeplayCB,
+from DittMusik import app
+from DittMusik.misc import db
+from DittMusik.utils import (DitMusikbin, get_channeplayCB,
                               seconds_to_min)
-from therowsee.utils.database import (get_cmode, is_active_chat,
+from DittMusik.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from therowsee.utils.decorators.language import language, languageCB
-from therowsee.utils.inline import queue_back_markup, queue_markup
+from DittMusik.utils.decorators.language import language, languageCB
+from DittMusik.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
