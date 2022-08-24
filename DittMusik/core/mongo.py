@@ -15,15 +15,15 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://ditxyz:apaanke1@ditxyz.bhnd3wi.mongodb.net/test?retryWrites=true&w=majority"
+TEMP_MONGODB = "mongodb+srv://apaanke1:apaanke1@cluster0.0tnpthh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "Tidak ada URL DB MONGO yang ditemukan.. Bot Anda akan berfungsi di Database DitMusik"
+        "Tidak ada URL DB MONGO yang ditemukan.. Bot Anda akan berfungsi di Database DitMusik Database"
     )
     temp_client = Client(
-        "DitMusik",
+        "Ditt",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
@@ -39,5 +39,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.DitMusik
-    pymongodb = _mongo_sync_.DitMusik
+    mongodb = _mongo_async_.Ditt
+    pymongodb = _mongo_sync_.Ditt
