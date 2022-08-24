@@ -11,10 +11,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from therowsee import app
-from therowsee.misc import SUDOERS
-from therowsee.utils.database import add_off, add_on
-from therowsee.utils.decorators.language import language
+from DittMusik import app
+from DittMusik.misc import SUDOERS
+from DittMusik.utils.database import add_off, add_on
+from DittMusik.utils.decorators.language import language
 
 # Commands
 LOGGER_COMMAND = get_command("LOGGER_COMMAND")
