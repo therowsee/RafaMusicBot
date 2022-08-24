@@ -17,7 +17,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from DittMusik import LOGGER, app, userbot
-from DittMusik.core.call import DittMusik
+from DittMusik.core.call import Ditt
 from DittMusik.plugins import ALL_MODULES
 from DittMusik.utils.database import get_banned_users, get_gbanned
 
@@ -59,9 +59,9 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await DittMusik.start()
+    await Ditt.start()
     try:
-        await DittMusik.stream_call(
+        await Ditt.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -78,4 +78,4 @@ async def init():
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("DittMusik").info("Stopping DittMusik ! GoodBye")
+    LOGGER("DittMusik").info("Stopping DittMusik Bot ! GoodBye")
