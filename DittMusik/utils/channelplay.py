@@ -7,8 +7,8 @@
 #
 # All rights reserved.
 
-from therowsee import app
-from therowsee.utils.database import get_cmode
+from DittMusik import app
+from DittMusik.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
