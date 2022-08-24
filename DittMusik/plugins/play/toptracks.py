@@ -13,14 +13,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from therowsee import app
-from therowsee.utils.database import (get_global_tops,
+from DittMusik import app
+from DittMusik.utils.database import (get_global_tops,
                                        get_particulars, get_userss)
-from therowsee.utils.decorators.language import languageCB
-from therowsee.utils.inline.playlist import (botplaylist_markup,
+from DittMusik.utils.decorators.language import languageCB
+from DittMusik.utils.inline.playlist import (botplaylist_markup,
                                               failed_top_markup,
                                               top_play_markup)
-from therowsee.utils.stream.stream import stream
+from DittMusik.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 
