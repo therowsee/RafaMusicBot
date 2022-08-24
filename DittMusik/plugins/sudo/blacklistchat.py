@@ -12,12 +12,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from therowsee import app
-from therowsee.misc import SUDOERS
-from therowsee.utils.database import (blacklist_chat,
+from DittMusik import app
+from DittMusik.misc import SUDOERS
+from DittMusik.utils.database import (blacklist_chat,
                                        blacklisted_chats,
                                        whitelist_chat)
-from therowsee.utils.decorators.language import language
+from DittMusik.utils.decorators.language import language
 
 # Commands
 
