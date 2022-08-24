@@ -17,7 +17,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from DittMusik import LOGGER, app, userbot
-from DittMusik.core.call import DitMusik
+from DittMusik.core.call import DittMusik
 from DittMusik.plugins import ALL_MODULES
 from DittMusik.utils.database import get_banned_users, get_gbanned
 
@@ -32,7 +32,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("DitMusik").error(
+        LOGGER("DittMusik").error(
             "Tidak Ada Asisten Klien yang Ditentukan Vars!.. Proses Keluar."
         )
         return
@@ -40,7 +40,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("DitMusik").warning(
+        LOGGER("DittMusik").warning(
             "Tidak ada Spotify Vars yang ditentukan.  Bot Anda tidak akan dapat memainkan kueri spotify."
         )
     try:
@@ -54,28 +54,28 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("DitMusik.plugins" + all_module)
-    LOGGER("DitMusik.plugins").info(
+        importlib.import_module("DittMusik.plugins" + all_module)
+    LOGGER("DittMusik.plugins").info(
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await DitMusik.start()
+    await DittMusik.start()
     try:
-        await Ditt.stream_call(
+        await DittMusik.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("DitMusik").error(
+        LOGGER("DittMusik").error(
             "[ERROR] - \n\nHarap aktifkan Obrolan Suara Grup Logger Anda.  Pastikan Anda tidak pernah menutup/mengakhiri obrolan suara di grup log Anda"
         )
         sys.exit()
     except:
         pass
     await Ditt.decorators()
-    LOGGER("DitMusik").info("DitMusik Bot Started Successfully")
+    LOGGER("DittMusik").info("DittMusik Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("DitMusik").info("Stopping Ditt ! GoodBye")
+    LOGGER("DittMusik").info("Stopping DittMusik ! GoodBye")
