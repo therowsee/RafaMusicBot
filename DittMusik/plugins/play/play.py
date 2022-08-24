@@ -21,7 +21,7 @@ from config import BANNED_USERS, lyrical
 from strings import get_command
 from DittMusik import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from DittMusik.core.call import DitMusik
+from DittMusik.core.call import Ditt
 from DittMusik.utils import seconds_to_min, time_to_seconds
 from DittMusik.utils.channelplay import get_channeplayCB
 from DittMusik.utils.database import is_video_allowed
@@ -335,7 +335,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await DitMusik.stream_call(url)
+                await Ditt.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "Ada masalah dengan bot.  Tolong laporkan ke pemilik saya dan minta mereka untuk memeriksa grup logger."
