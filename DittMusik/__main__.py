@@ -16,7 +16,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from therowsee import LOGGER, app, userbot
+from DittMusik import LOGGER, app, userbot
 from therowsee.core.call import DitMusik
 from therowsee.plugins import ALL_MODULES
 from therowsee.utils.database import get_banned_users, get_gbanned
