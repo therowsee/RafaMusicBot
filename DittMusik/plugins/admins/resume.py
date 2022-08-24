@@ -13,10 +13,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from therowsee import app
-from therowsee.core.call import DitMusik 
-from therowsee.utils.database import is_music_playing, music_on
-from therowsee.utils.decorators import AdminRightsCheck
+from DittMusik import app
+from DittMusik.core.call import DitMusik 
+from DittMusik.utils.database import is_music_playing, music_on
+from DittMusik.utils.decorators import AdminRightsCheck
 
 # Commands
 RESUME_COMMAND = get_command("RESUME_COMMAND")
