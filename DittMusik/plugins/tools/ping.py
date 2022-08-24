@@ -14,10 +14,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
-from therowsee import app
-from therowsee.core.call import DitMusik
-from therowsee.utils import bot_sys_stats
-from therowsee.utils.decorators.language import language
+from DittMusik import app
+from DittMusik.core.call import DitMusik
+from DittMusik.utils import bot_sys_stats
+from DittMusik.utils.decorators.language import language
 
 ### Commands
 PING_COMMAND = get_command("PING_COMMAND")
