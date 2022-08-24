@@ -15,8 +15,8 @@ import wget
 from pyrogram import filters
 
 from strings import get_command
-from therowsee import app
-from therowsee.misc import SUDOERS
+from DittMusik import app
+from DittMusik.misc import SUDOERS
 
 # Commands
 SPEEDTEST_COMMAND = get_command("SPEEDTEST_COMMAND")
