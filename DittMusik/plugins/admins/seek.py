@@ -13,7 +13,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from DittMusik import YouTube, app
-from DittMusik.core.call import DitMusik 
+from DittMusik.core.call import Ditt 
 from DittMusik.misc import db
 from DittMusik.utils import AdminRightsCheck, seconds_to_min
 
