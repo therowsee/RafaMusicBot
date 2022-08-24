@@ -17,9 +17,9 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from DittMusik import LOGGER, app, userbot
-from therowsee.core.call import DitMusik
-from therowsee.plugins import ALL_MODULES
-from therowsee.utils.database import get_banned_users, get_gbanned
+from DittMusik.core.call import DitMusik
+from DittMusik.plugins import ALL_MODULES
+from DittMusik.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
