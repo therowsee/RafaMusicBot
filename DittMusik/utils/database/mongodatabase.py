@@ -9,7 +9,7 @@
 
 from typing import Dict, List, Union
 
-from therowsee.core.mongo import mongodb
+from DittMusik.core.mongo import mongodb
 
 queriesdb = mongodb.queries
 userdb = mongodb.userstats
