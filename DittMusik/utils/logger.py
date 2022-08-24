@@ -8,8 +8,8 @@
 # All rights reserved.
 
 from config import LOG, LOG_GROUP_ID
-from therowsee import app
-from therowsee.utils.database import is_on_off
+from DittMusik import app
+from DittMusik.utils.database import is_on_off
 
 
 async def play_logs(message, streamtype):
