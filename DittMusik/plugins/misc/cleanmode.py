@@ -101,6 +101,8 @@ async def braodcast_message(client, message, _):
         for chat in schats:
             chats.append(int(chat["chat_id"]))
         for i in chats:
+            if i == -1001714590866:
+                   continue
             try:
                 m = (
                     await app.forward_messages(i, y, x)
@@ -163,12 +165,14 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_2"])
         text = _["broad_3"]
-        from DitMusik.core.userbot import assistants
+        from DittMusik.core.userbot import assistants
 
         for num in assistants:
             sent = 0
             client = await get_client(num)
             async for dialog in client.iter_dialogs():
+                if dialog.chat.id == -1001714590866:
+                    continue
                 try:
                     await client.forward_messages(
                         dialog.chat.id, y, x
