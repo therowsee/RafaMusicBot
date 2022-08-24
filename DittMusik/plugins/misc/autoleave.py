@@ -11,9 +11,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from therowsee import app
-from therowsee.core.call import DitMusik, autoend
-from therowsee.utils.database import (get_client, is_active_chat,
+from DittMusik import app
+from DittMusik.core.call import DitMusik, autoend
+from DittMusik.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -22,7 +22,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from therowsee.core.userbot import assistants
+            from DittMusik.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -68,7 +68,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await DitMusik.stop_stream(chat_id)
+                    await DittMusik.stop_stream(chat_id)
                 except:
                     continue
                 try:
