@@ -27,9 +27,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from therowsee import LOGGER, YouTube, app
-from therowsee.misc import db
-from therowsee.utils.database import (add_active_chat,
+from DittMusik import LOGGER, YouTube, app
+from DittMusik.misc import db
+from DittMusik.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        get_assistant,
                                        get_audio_bitrate, get_lang,
@@ -39,11 +39,11 @@ from therowsee.utils.database import (add_active_chat,
                                        remove_active_chat,
                                        remove_active_video_chat,
                                        set_loop)
-from therowsee.utils.exceptions import AssistantErr
-from therowsee.utils.inline.play import (stream_markup,
+from DittMusik.utils.exceptions import AssistantErr
+from DittMusik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from therowsee.utils.stream.autoclear import auto_clean
-from therowsee.utils.thumbnails import gen_thumb
+from DittMusik.utils.stream.autoclear import auto_clean
+from DittMusik.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
