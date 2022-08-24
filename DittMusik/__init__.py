@@ -7,7 +7,7 @@
 #
 # All rights reserved.
 
-from DittMusik import DitMusik
+from DittMusik import DittMusik
 from DittMusik.core.dir import dirr
 from DittMusik.core.git import git
 from DittMusik.core.userbot import Userbot
@@ -31,7 +31,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = DitMusik()
+app = DittMusik()
 
 # Assistant Client
 userbot = Userbot()
