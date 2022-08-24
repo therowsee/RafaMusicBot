@@ -14,8 +14,8 @@ from datetime import datetime, timedelta
 import config
 from config import clean
 from strings import get_string
-from therowsee import app
-from therowsee.utils.database import (get_lang,
+from DittMusik import app
+from DittMusik.utils.database import (get_lang,
                                        get_private_served_chats,
                                        get_served_chats,
                                        is_suggestion)
