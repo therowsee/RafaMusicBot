@@ -9,18 +9,18 @@ import config
 from config import BANNED_USERS
 from config.config import OWNER_ID
 from strings import get_command, get_string
-from therowsee import Telegram, YouTube, app
-from therowsee.misc import SUDOERS
-from therowsee.plugins.play.playlist import del_plist_msg
-from therowsee.plugins.sudo.sudoers import sudoers_list
-from therowsee.utils.database import (add_served_chat,
+from DittMusik import Telegram, YouTube, app
+from DittMusik.misc import SUDOERS
+from DittMusik.plugins.play.playlist import del_plist_msg
+from DittMusik.plugins.sudo.sudoers import sudoers_list
+from DittMusik.utils.database import (add_served_chat,
                                        add_served_user,
                                        blacklisted_chats,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from therowsee.utils.decorators.language import LanguageStart
-from therowsee.utils.inline import (help_pannel, private_panel,
+from DittMusik.utils.decorators.language import LanguageStart
+from DittMusik.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
