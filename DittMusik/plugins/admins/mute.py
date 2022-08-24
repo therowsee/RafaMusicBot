@@ -13,7 +13,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from DittMusik import app
-from DittMusik.core.call import DitMusik
+from DittMusik.core.call import Ditt
 from DittMusik.utils.database import is_muted, mute_on
 from DittMusik.utils.decorators import AdminRightsCheck
 
