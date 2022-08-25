@@ -20,7 +20,7 @@ from config import BANNED_USERS
 from strings import get_command
 from DittMusik import app
 from DittMusik.misc import db
-from DittMusik.utils import (DitMusikbin, get_channeplayCB,
+from DittMusik.utils import (Dittbin, get_channeplayCB,
                               seconds_to_min)
 from DittMusik.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
@@ -216,7 +216,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             )
         if "🏷" in msg:
             msg = msg.replace("🏷", "")
-        link = await therowseebin(msg)
+        link = await Dittbin(msg)
         med = InputMediaPhoto(
             media=link, caption=_["queue_3"].format(link)
         )
