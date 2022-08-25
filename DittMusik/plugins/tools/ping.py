@@ -15,7 +15,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
 from DittMusik import app
-from DittMusik.core.call import DitMusik
+from DittMusik.core.call import Ditt
 from DittMusik.utils import bot_sys_stats
 from DittMusik.utils.decorators.language import language
 
