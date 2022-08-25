@@ -14,7 +14,7 @@ from pyrogram.types import CallbackQuery, Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
 from DittMusik import app
-from DittMusik.core.call import DitMusik 
+from DittMusik.core.call import Ditt
 from DittMusik.misc import db
 from DittMusik.utils.database import get_authuser_names, get_cmode
 from DittMusik.utils.decorators import (ActualAdminCB, AdminActual,
@@ -68,7 +68,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await ditt.stop_stream(message.chat.id)
+        await Ditt.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -79,7 +79,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await ditt.stop_stream(chat_id)
+            await Ditt.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text(
