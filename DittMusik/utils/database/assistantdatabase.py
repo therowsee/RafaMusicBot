@@ -45,7 +45,7 @@ async def set_assistant(chat_id):
 
 
 async def get_assistant(chat_id: int) -> str:
-    from therowsee.core.userbot import assistants
+    from DittMusik.core.userbot import assistants
 
     assistant = assistantdict.get(chat_id)
     if not assistant:
