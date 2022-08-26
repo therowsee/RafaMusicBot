@@ -1,6 +1,6 @@
 .env
 .cache
-DitMusiklogs.txt
+Dittlogs.txt
 .DS_Store
 *.session
 raw_files/
